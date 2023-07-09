@@ -20,7 +20,6 @@ function App() {
   const updateBookShelf = (book, newShelf) => {
     const updateBook = async () => {
       let isNewBook = true;
-      //call update API to server, don't need to use response data
       await BooksAPI.update(book, newShelf);
 
       let newBooks = books.map(b => {
